@@ -3,28 +3,20 @@ name: build
 on:
   workflow_dispatch:
     inputs:
-      naturoppdragPublishTarget:
-        description: 'Naturoppdrag publish target'
-        required: true
-        default: PUBLISH_TESTAPP
-        type: choice
-        options:
-          - PUBLISH_STOREAPP
-          - PUBLISH_TESTAPP
       buildLinux:
         description: 'Build Linux'
         required: true
-        default: true
+        default: false
         type: boolean
       buildMacOS:
         description: 'Build MacOS'
         required: true
-        default: true
+        default: false
         type: boolean
       buildWindows:
         description: 'Build Windows'
         required: true
-        default: false
+        default: true
         type: boolean
 
 jobs:
