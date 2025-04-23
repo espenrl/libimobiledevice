@@ -37,28 +37,28 @@ jobs:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libplist-latest_${{env.target_triplet}}
-        repo: libimobiledevice/libplist
+        repo: espenrl/libplist
     - name: fetch libusbmuxd
       uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libusbmuxd-latest_${{env.target_triplet}}
-        repo: libimobiledevice/libusbmuxd
+        repo: espenrl/libusbmuxd
     - name: fetch libimobiledevice-glue
       uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libimobiledevice-glue-latest_${{env.target_triplet}}
-        repo: libimobiledevice/libimobiledevice-glue
+        repo: espenrl/libimobiledevice-glue
     - name: fetch libtatsu
       uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libtatsu-latest_${{env.target_triplet}}
-        repo: libimobiledevice/libtatsu
+        repo: espenrl/libtatsu
     - name: install external dependencies
       run: |
           mkdir extract
@@ -105,28 +105,28 @@ jobs:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libplist-latest_macOS
-        repo: libimobiledevice/libplist
+        repo: espenrl/libplist
     - name: fetch libusbmuxd
       uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libusbmuxd-latest_macOS
-        repo: libimobiledevice/libusbmuxd
+        repo: espenrl/libusbmuxd
     - name: fetch libimobiledevice-glue
       uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libimobiledevice-glue-latest_macOS
-        repo: libimobiledevice/libimobiledevice-glue
+        repo: espenrl/libimobiledevice-glue
     - name: fetch libtatsu
       uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libtatsu-latest_macOS
-        repo: libimobiledevice/libtatsu
+        repo: espenrl/libtatsu
     - name: install external dependencies
       run: |
           mkdir extract
@@ -231,28 +231,28 @@ jobs:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libplist-latest_${{ matrix.arch }}-${{ env.dest }}
-        repo: libimobiledevice/libplist
+        repo: espenrl/libplist
     - name: fetch libusbmuxd
       uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libusbmuxd-latest_${{ matrix.arch }}-${{ env.dest }}
-        repo: libimobiledevice/libusbmuxd
+        repo: espenrl/libusbmuxd
     - name: fetch libimobiledevice-glue
       uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libimobiledevice-glue-latest_${{ matrix.arch }}-${{ env.dest }}
-        repo: libimobiledevice/libimobiledevice-glue
+        repo: espenrl/libimobiledevice-glue
     - name: fetch libtatsu
       uses: dawidd6/action-download-artifact@v6
       with:
         github_token: ${{secrets.GITHUB_TOKEN}}
         workflow: build.yml
         name: libtatsu-latest_${{ matrix.arch }}-${{ env.dest }}
-        repo: libimobiledevice/libtatsu
+        repo: espenrl/libtatsu
     - name: install external dependencies
       run: |
           mkdir extract
